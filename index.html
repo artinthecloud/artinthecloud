@@ -1,44 +1,129 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Art in the Cloud</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: black;
-            background-color: white;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        h1 {
-            font-size: 4em;
-            font-weight: bold;
-            margin-bottom: 0.5em;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 0.5em 0;
-        }
-        .bio {
-            font-size: 1em;
-            margin-top: 2em;
-            width: 60%;
-            text-align: left;
-        }
-    </style>
+<meta charset="UTF-8">
+<link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art in the Cloud with Connor Doyle</title>
+<style>
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: black;
+    background-color: #FAF9F6;
+  }
+  .container {
+    width: 60%;
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+  }
+  .video {
+    margin: 20px 0;
+  }
+  .buttons {
+    margin: 20px 0;
+  }
+  h1 {
+    padding-top: 1em;
+    font-size: 5em;
+  }
+  h2 {
+  text-align: left;
+}
+.button-container {
+  text-align: center;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, blue, purple, black);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.icon-button {
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.spotify {
+  background-color: #1DB954;
+}
+
+.contact {
+  background-color: #333;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+  .footer {
+    margin: 40px 0;
+    font-size: 0.75em;
+
+  }
+  .video-container {
+  width: 100%;
+  height: 500px; /* You can adjust this as needed */
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+}
+
+</style>
 </head>
 <body>
-    <h1>Art in the Cloud</h1>
-    <p>A journey through the evolving world of digital art and augmented reality.</p>
-    <div class="bio">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/58QVHQp96xaF16whBYLq0L?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <p><strong>Hosted by Connor Doyle</strong></p>
-    </div>
+
+
+
+<div class="container">
+  <h1 class="gradient-text" style="margin: 0;">Art in the Cloud</h1>
+  <p style="padding: 0; "> Hosted by Connor Doyle </p>
+  <div>
+    <!-- Replace 'src' with your Spotify playlist link -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/58QVHQp96xaF16whBYLq0L?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <h3 style="padding: 2em; text-align: center;" >Sit down with technologists, artists, and creators from around the world and learn how technology transforms their work.</h3>
+
+  <!-- <div class="video-container">
+  <video controls autoplay loop>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div> -->
+
+
+
+<div class="button-container">
+     <a href="https://www.linkedin.com" class="icon-button linkedin"><i class="fa-brands fa-linkedin"></i></a>
+     <a href="https://www.spotify.com" class="icon-button spotify"><i class="fa-brands fa-spotify"></i></a>
+     <a href="mailto:contact@example.com" class="icon-button contact"><i class="fa-solid fa-envelope"></i></a>
+ </div>
+
+
+  <div class="footer">
+    <p>&copy; 2024 Connor Doyle. All rights reserved.</p>
+  </div>
+</div>
+
 </body>
+</div>
 </html>
